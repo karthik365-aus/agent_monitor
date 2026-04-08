@@ -17,6 +17,15 @@ This framework helps teams:
 
 The goal is to improve decision-making when building AI-powered products.
 
+## System Architecture
+
+The framework is composed of four modules:
+
+- **Data collection** - capture agent responses across experiments
+- **Evaluation layer** - scoring, validation, hallucination detection
+- **Experiment tracking** - compare agent workflows and prompts
+- **Visualization** - Streamlit dashboards for analysis
+
 ## Quick start
 
 - Configure env vars from `.env.example`
@@ -46,3 +55,17 @@ The goal is to improve decision-making when building AI-powered products.
 - Compare onboarding assistant prompts for conversion impact
 - Identify hallucination risks in customer-facing AI tools
 - Benchmark multiple models or workflows during product launches
+
+## Dashboard Screenshots
+
+### Overview
+
+![Overview dashboard](docs/screenshots/overview.png)
+
+### Run Collection
+
+![Run Collection dashboard](docs/screenshots/run-collection.png)
+
+### Root Cause
+
+![Root Cause dashboard](docs/screenshots/root-cause.png)
