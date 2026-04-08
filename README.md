@@ -1,6 +1,21 @@
-# agent_monitor
+# AI Agent Evaluation Framework
 
-Modular AI agent performance monitor.
+A modular framework for evaluating and comparing AI agent performance across workflows.
+The system collects outputs, scores responses, identifies failure patterns, and provides
+visual dashboards to help teams choose reliable AI workflows before deployment.
+
+## Why this tool exists
+
+AI teams often run multiple agents, prompts, or workflows but lack a systematic way to evaluate them.
+
+This framework helps teams:
+
+- Compare agent outputs across experiments
+- Detect hallucinations and failure patterns
+- Score response quality
+- Identify reliable workflows before deployment
+
+The goal is to improve decision-making when building AI-powered products.
 
 ## Quick start
 
@@ -24,3 +39,10 @@ Modular AI agent performance monitor.
   - All data: `python validate.py --errors-only`
   - One run: `python validate.py --run <run_id> --errors-only`
 - Strict CI-style gate: `pytest tests/test_smoke.py -x && python validate.py --errors-only`
+
+## GTM Use Cases
+
+- Evaluate AI support agents before customer deployment
+- Compare onboarding assistant prompts for conversion impact
+- Identify hallucination risks in customer-facing AI tools
+- Benchmark multiple models or workflows during product launches
