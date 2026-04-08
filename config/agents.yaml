@@ -1,0 +1,39 @@
+defaults:
+  temperature: 0.7
+  max_tokens: 150
+  timeout: 30
+  retries: 2
+
+agents:
+  - name: groq_support
+    provider: groq
+    model: qwen/qwen3-32b
+    role: support
+    system_prompt: "You are a concise customer support agent."
+    prompt_template: "Customer support: {query}"
+    temperature: 0.5
+    enabled: true
+
+  - name: gemini_summarizer
+    provider: gemini
+    model: gemini-2.5-flash
+    role: summarization
+    prompt_template: "Summarize in 2 sentences: {query}"
+    rate_limit_delay: 0.8
+    enabled: true
+
+  - name: groq_analyzer
+    provider: groq
+    model: qwen/qwen3-32b
+    role: analysis
+    prompt_template: "Analysis: {query}"
+    enabled: true
+
+  - name: groq_judge
+    provider: groq
+    model: llama-3.3-70b-versatile
+    role: judge
+    prompt_template: "{query}"
+    temperature: 0.0
+    enabled: true
+    enabled_for_collection: false

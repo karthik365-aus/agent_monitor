@@ -1,0 +1,46 @@
+thresholds:
+  failure_hallucination: 40
+  warning_hallucination: 25
+  success_rate_target: 90
+  latency_warning: 2.0
+  latency_critical: 3.0
+  sample_size_min: 5
+  p_value_threshold: 0.05
+  drift_std_threshold: 2
+  drift_latency_abs_threshold: 100
+  forecast_days: 7
+
+weights:
+  latency_score_scale: 20.0
+  leaderboard:
+    accuracy: 0.4
+    speed: 0.3
+    consistency: 0.3
+  routing:
+    hallucination: 0.7
+    latency: 0.3
+  root_cause:
+    severity:
+      hallucination: 0.5
+      latency: 0.3
+      errors: 0.2
+    risk:
+      hallucination: 0.7
+      latency: 0.2
+      error_penalty: 30.0
+
+db_path: data/metrics.db
+output_dir: data/reports
+agents_config: config/agents.yaml
+queries_config: config/queries.yaml
+prices_config: config/prices.yaml
+
+metrics:
+  scorers:
+    - llm_judge_hallucination
+    - keyword_hallucination
+    - semantic_relevance
+    - quality
+  primary: llm_judge_hallucination
+  judge_agent: groq_judge
+  embedder: all-MiniLM-L6-v2

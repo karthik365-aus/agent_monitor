@@ -1,0 +1,21 @@
+[project]
+name = "agent-monitor"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "pyyaml",
+  "scipy",
+  "groq",
+  "google-genai",
+  "typer",
+  "tqdm",
+  "sentence-transformers",
+  "numpy",
+  "streamlit",
+  "plotly",
+  "reportlab",
+]
+
+[tool.setuptools]
+packages = ["agent_monitor"]

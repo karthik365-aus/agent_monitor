@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build / packaging artifacts
+*.egg-info/
+dist/
+build/
+
+# Local data artifacts
+data/*.db
+data/reports/

@@ -1,0 +1,27 @@
+categories:
+  support:
+    - "Return policy?"
+    - "Shipping time?"
+    - "Can I refund?"
+    - "Tracking number?"
+    - "Payment methods?"
+    - "What if I return after 30 days?"
+    - "Do you offer gift wrapping?"
+
+  summarization:
+    - "Artificial intelligence is changing how companies operate across customer support, logistics, and product design. Teams now use AI tools to automate repetitive tasks, improve forecasting, and speed up research, but leaders are also worried about data privacy, model bias, and the need to retrain employees."
+    - "Climate change is increasing the frequency of heatwaves, floods, and droughts in many regions. Governments are investing in renewable energy and grid modernization, while businesses are under pressure to reduce emissions, improve energy efficiency, and disclose climate risks to investors."
+    - "Quantum computing has advanced from laboratory demonstrations to early commercial pilots. Researchers have improved error correction and qubit stability, but practical applications still face challenges related to hardware scale, software tooling, and the shortage of specialized talent."
+    - "5G networks are enabling faster mobile connectivity and lower latency for applications such as connected factories, telemedicine, and autonomous systems. At the same time, organizations must plan for infrastructure costs, cybersecurity risks, and interoperability with existing IoT deployments."
+
+  analysis:
+    - "Revenue growth trend?"
+    - "User acquisition metrics?"
+    - "Error rate analysis?"
+    - "Churn rate forecast?"
+
+  edge_cases:
+    - ""
+    - "??"
+    - "!@#$%"
+    - "x y z"
